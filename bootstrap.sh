@@ -8,12 +8,12 @@ kubectl apply -f .infrastructure/namespace.yml
 
 echo "Creating MySQL resources..."
 kubectl apply -f .infrastructure/ss-secret.yml
-kubectl apply -f .infrastructure/ss-configiMap.yml
+kubectl apply -f .infrastructure/ss-configMap.yml
 kubectl apply -f .infrastructure/ss-service.yml
 kubectl apply -f .infrastructure/statefulSet.yml
 
 echo "Creating todoapp resources..."
-kubectl apply -f .infrastructure/confgiMap.yml
+kubectl apply -f .infrastructure/configMap.yml
 kubectl apply -f .infrastructure/secret.yml
 kubectl apply -f .infrastructure/db-secret.yml
 kubectl apply -f .infrastructure/pv.yml
